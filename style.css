@@ -2,4 +2,136 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    background-color: #FEF9E7;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont_titulo{
+    display: flex;
+    font-size: 40px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.cont_info{
+    background-color: #ffffff;
+    border: 3px solid #006502;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.pre_cont1{
+    display: none;
+}
+
+.cont1{
+   margin: 0 5%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.cont2{
+    margin: 0 5%;
+    width: 100%;
+}
+
+.cont_text, .cont_listado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #595c5c;
+}
+
+.presupuesto, .gasto, .cant, .presupuesto{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 2px solid #a6a8a9;
+}
+
+.cont_boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    padding: 10px;
+    background-color: #007302;
+    border: 1px solid #006502;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.cont_gasto, .cont_cant{
+    display: none;
+}
+
+.card{
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    border: 2px solid #707B7C;
+    border-radius: 8px;
+}
+
+.art, .precio, .boton_card{
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+}
+
+.precio{
+    color: #21618C;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.boton_card{
+    padding: 10px;
+    background-color: #ec5e4e;
+    border: 1px solid #ec5e4e;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cont_presupuesto, .cont_rest{
+    display: flex;
+}
+
+.cont_presupuesto{
+    width: 100%;
+    background-color: #01ad04;
+    padding: 10px 2%;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.cont_rest{
+    width: 100%;
+    background-color: #f26d5f;
+    padding: 10px 2%;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.text_presu, .text_rest{
+    font-weight: bold;
 }
