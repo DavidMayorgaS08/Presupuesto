@@ -78,11 +78,12 @@ section{
     color: #ffffff;
     font-size: 15px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.cont_gasto, .cont_cant{
+/* .cont_gasto, .cont_cant{
     display: none;
-}
+} */
 
 .card{
     display: flex;
@@ -110,6 +111,7 @@ section{
     border: 1px solid #ec5e4e;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .cont_presupuesto, .cont_rest{
