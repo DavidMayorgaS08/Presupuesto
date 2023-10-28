@@ -37,7 +37,7 @@ function iniciar() {
         document.querySelector(".pre_cont").style.display = "none";
         document.querySelector(".cont_boton_p").style.display = "none";
         document.querySelector(".cont_boton_s").style.display = "block";
-        console.log(presupuesto);
+        document.querySelector(".cont_rest").style.backgroundColor = "#01ad04";
     }
 }
 
@@ -82,8 +82,9 @@ function registrar() {
 
     document.getElementById("gasto").value = "";
     document.getElementById("cant").value = "";
-    
+
     if(presupuesto_final === 0){
         document.querySelector(".cont_boton_s").style.display = "none";
+        document.querySelector(".cont_rest").style.backgroundColor = "#f26d5f";
     }
 }
