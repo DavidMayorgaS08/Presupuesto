@@ -32,6 +32,10 @@ section{
     border-radius: 10px;
 }
 
+.pre_cont{
+    display: block;
+}
+
 .pre_cont1{
     display: none;
 }
@@ -65,10 +69,14 @@ section{
     border: 2px solid #a6a8a9;
 }
 
-.cont_boton{
+.cont_boton_p, .cont_boton_s{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.cont_boton_s{
+    display: none;
 }
 
 .boton{
@@ -81,20 +89,20 @@ section{
     cursor: pointer;
 }
 
-/* .cont_gasto, .cont_cant{
+.cont_gasto, .cont_cant{
     display: none;
-} */
+}
 
 .card{
     display: flex;
     padding: 8px;
-    justify-content: center;
+    justify-content: space-between;
     border: 2px solid #707B7C;
     border-radius: 8px;
 }
 
 .art, .precio, .boton_card{
-    margin: 0 10%;
+    margin: 0 5%;
     display: flex;
     align-items: center;
 }
