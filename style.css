@@ -118,6 +118,12 @@ section{
     background-color: #ec5e4e;
     border: 1px solid #ec5e4e;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #ec5e4e;
+    border: solid #ec5e4e;
     font-weight: bold;
     cursor: pointer;
 }
