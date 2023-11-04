@@ -4,7 +4,7 @@ let saldoRestante = 0;
 function formatearMoneda(valor) {
     return valor.toLocaleString('es-ES', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'COL',
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     });
@@ -65,8 +65,6 @@ function registrar() {
 
             if (saldoRestante < presupuestoInicial * 0.2) {
                 document.querySelector(".cont_rest").style.backgroundColor = "#FF0000";
-            } else {
-                document.querySelector(".cont_rest").style.backgroundColor = "#f26d5f";
             }
 
             if (saldoRestante <= 0) {
@@ -91,8 +89,8 @@ function registrar() {
                 mensajePresupuesto.style.fontWeight = "normal";
             }, 2000);
         }
-    } else {
-        mensajePresupuesto.textContent = "Por favor, ingrese un nombre y una cantidad válidos";
+    }else if(nombreGasto === ""){
+        mensajePresupuesto.textContent = "Por favor, ingrese un nombre válido";
         mensajePresupuesto.style.color = "red";
         mensajePresupuesto.style.fontWeight = "bold";
 
@@ -101,7 +99,18 @@ function registrar() {
             mensajePresupuesto.style.color = "#595c5c";
             mensajePresupuesto.style.fontWeight = "normal";
         }, 2000);
-    };
+    }else{
+        mensajePresupuesto.textContent = "Por favor, ingrese una cantidad válida";
+        mensajePresupuesto.style.color = "red";
+        mensajePresupuesto.style.fontWeight = "bold";
+
+        setTimeout(function () {
+            mensajePresupuesto.textContent = "Añade tus gastos";
+            mensajePresupuesto.style.color = "#595c5c";
+            mensajePresupuesto.style.fontWeight = "normal";
+        }, 2000);
+    
+    }
 };
 
 function borrarGasto(button, cantidad) {
