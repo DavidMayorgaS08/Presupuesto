@@ -90,7 +90,7 @@ function registrar() {
             }, 2000);
         }
     }else if(nombreGasto === ""){
-        mensajePresupuesto.textContent = "Por favor, ingrese un nombre válido";
+        mensajePresupuesto.textContent = "Por favor, ingrese un nombre";
         mensajePresupuesto.style.color = "red";
         mensajePresupuesto.style.fontWeight = "bold";
 
